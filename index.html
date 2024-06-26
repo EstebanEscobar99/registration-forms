@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login page with sign up and sign in options">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+</head>
+
+<body>
+<main class="container" id="container">
+    <section class="form-container sign-up-container">
+        <form action="#" method="POST">
+            <header>
+                <h1>Create Account</h1>
+            </header>
+            <div class="social-container">
+                <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social" aria-label="Google"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>or use your email for registration</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <section class="form-container sign-in-container">
+        <form action="#" method="POST">
+            <header>
+                <h1>Sign in</h1>
+            </header>
+            <div class="social-container">
+                <a href="#" class="social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social" aria-label="Google"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>or use your account</p>
+            <label for="sign-in-email">Email</label>
+            <input type="email" id="sign-in-email" name="sign-in-email" placeholder="Email" required />
+            <label for="sign-in-password">Password</label>
+            <input type="password" id="sign-in-password" name="sign-in-password" placeholder="Password" required />
+            <a href="#">Forgot your password?</a>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    <section class="overlay-container">
+        <div class="overlay">
+            <article class="overlay-panel overlay-left">
+                <header>
+                    <h1>Welcome Back!</h1>
+                </header>
+                <p>To keep connected with us please log in with your personal details</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </article>
+            <article class="overlay-panel overlay-right">
+                <header>
+                    <h1>Hi There!</h1>
+                </header>
+                <p>Enter your personal details to open an account with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </article>
+        </div>
+    </section>
+</main>
+
+<script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
